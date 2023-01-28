@@ -63,3 +63,33 @@ Write in the file `3-O`, the big O notations of the time complexity of the Quick
 * in the worst case
 
 File: [3-quick_sort.c](./3-quick_sort.c), [3-O](./3-O)
+
+### 4. Shell sort -Knuth Sequence
+Function that sorts an array of integers in ascending order using the [Shell sort](https://en.wikipedia.org/wiki/Shellsort) algorithm, using the `Knuth sequence`
+* Prototype: `void shell_sort(int *array, size_t size);`
+* You must use the following sequence of intervals (a.k.a the Knuth sequence):
+** n+1 = n * 3 + 1
+** 1, 4, 13, 40, 121, ...
+
+File: [100-shell_sort.c](./100-shell_sort.c)
+
+### 5. Cocktail shaker sort
+Function that sorts a doubly linked list of integers in ascending order using the [Cocktail shaker](https://en.wikipedia.org/wiki/Cocktail_shaker_sort) sort algorithm
+* Prototype: `void cocktail_sort_list(listint_t **list);`
+
+FIle: [101-cocktail_sort_list.c](./101-cocktail_sort_list.c), [101-O](./101-O)
+
+### 6. Counting sort
+function that sorts an array of integers in ascending order using the [Counting sort](https://en.wikipedia.org/wiki/Counting_sort) algorithm
+* Prototype: `void counting_sort(int *array, size_t size);`
+
+File: [102-counting_sort.c](./102-counting_sort.c), [102-O](./102-O)
+
+### 7. Merge sort
+Function that sorts an array of integers in ascending order using the [Merge sort](https://en.wikipedia.org/wiki/Merge_sort) algorithm
+* Prototype: `void merge_sort(int *array, size_t size);`
+* You must implement the `top-down` merge sort algorithm
+** When you divide an array into two sub-arrays, the size of the left array should always be <= the size of the right array. i.e. `{1, 2, 3, 4, 5}` -> `{1, 2}, {3, 4, 5}`
+** Sort the left array before the right array
+
+File: [103-merge_sort.c](./103-merge_sort.c), [103-O](./103-O)
